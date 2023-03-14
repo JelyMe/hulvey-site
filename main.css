@@ -1,0 +1,212 @@
+html{
+    height:100%;
+  }
+  body {
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    background-color: #111;
+  }
+  body::-webkit-scrollbar {
+    display: none;
+  }
+  .topBar {
+    color: #fff;
+    font-family: Poppins;
+    font-weight: 200;
+    position: fixed;
+  }
+  #top-left {
+    left: 30px;
+    transition: 0.4s ease-in-out;
+    z-index: 5;
+    font-style: italic;
+  }
+  #top-left:hover {
+    color: #cfbd3c;
+  }
+  #top-music {
+    right: 25px;
+    top: 14px;
+    z-index: 5;
+    font-size: 1em;
+    transition: 0.4s ease-in-out;
+  }
+  #top-music:hover {
+    color: #A44A3F;
+  }
+  #top-play {
+    right: 95px;
+    top: 14px;
+    z-index: 5;
+    font-size: 1em;
+    transition: 0.4s ease-in-out;
+  }
+  #top-play:hover {
+    color: #188FA7;
+  }
+  #top-engage {
+    right: 150px;
+    top: 14px;
+    z-index: 5;
+    font-size: 1em;
+    transition: 0.4s ease-in-out;
+  }
+  #top-engage:hover {
+    color: #7D5BA6;
+  }
+  #main-wrapper {
+    animation: 6s ease-out 0s 1 normal forwards grow;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+  }
+  #main-text {
+    color: #cfbd3c;
+    font-family: "Poppins";
+    font-style: italic;
+  }
+  @keyframes grow {
+    0% {
+      transform: scale(0.1);
+    }
+    55% {
+      transform: scale(0.8);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  #one {
+    animation: 6s ease-out 0s 1 normal forwards spin;
+    position: absolute;
+    z-index: -2;
+  }
+  #two {
+    animation: 6s ease-out 0.3s 1 normal forwards spinTwo;
+    position: absolute;
+    z-index: -2;
+  }
+  #thr {
+    animation: 6s ease-out 0.6s 1 normal forwards spinThr;
+    position: absolute;
+    z-index: -2;
+    overflow: hidden;
+  }
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    75% /*This 4.5 seconds in*/{
+      transform: rotate(1turn);
+    }
+    90%{
+      transform: rotate(1turn);
+      fill: #cfbd3c;
+    }
+    95%{
+      transform: rotate(1turn);
+      fill: #FFF;
+    }
+    100% {
+      transform: rotate(1turn);
+      fill: #cfbd3c;
+    }
+  }
+  @keyframes spinTwo {
+    0% {
+      transform: rotate(0deg);
+    }
+    75% /*This 4.5 seconds in*/{
+      transform: rotate(1turn);
+    }
+    85%{
+      transform: rotate(1turn);
+      fill: #cfbd3c;
+    }
+    90%{
+      transform: rotate(1turn);
+      fill: #FFF;
+    }
+    95% /*This effect takes 1.2 seconds*/{
+      transform: rotate(1turn);
+      fill: #cfbd3c;
+    }
+    100% {
+      transform: rotate(1turn);
+      fill: #cfbd3c;
+    }
+  }
+  @keyframes spinThr {
+    0% {
+      transform: rotate(0deg);
+    }
+    75% {
+      transform: rotate(1.25turn) translate(135px, 135px);
+    }
+    80%{
+      transform: rotate(1.25turn) translate(135px, 135px);
+      fill: #cfbd3c;
+    }
+    85%{
+      transform: rotate(1.25turn) translate(135px, 135px);
+      fill: #FFF;
+    }
+    90%{
+      transform: rotate(1.25turn) translate(135px, 135px);
+      fill: #cfbd3c;
+    }
+    100%{
+      transform: rotate(1.25turn) translate(135px, 135px);
+      fill: #cfbd3c;
+    }
+  }
+  #dots {
+    background-image: radial-gradient(
+      rgba(255, 255, 255, 0.2) 8%,
+      transparent 8%
+    );
+    background-position: 0% 0%;
+    background-size: 40px 40px;
+    position: relative;
+    height: 100%;
+  }
+  #radial {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    background-image: radial-gradient(#111 20%, rgba(0, 0, 0, 0));
+  }
+  /*--------------Lower Section-------------*/
+  #divider{
+    position:absolute;
+  }
+  #about{
+    background: url(http://www.reachrecords.com/wp-content/uploads/2020/01/Hulvey-1280x576.png), #F2CCA7;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*background-position: 100px;*/
+    height:75vh;
+    width: 100%;
+    background-color: #111;
+    overflow: hidden;
+  }
+  #about h1{
+    position:relative;
+    color: #111;
+    font-family: Prata;
+    font-style: italic;
+    left: 1vw;
+    top: 5vh;
+    font-size: 1.7em;
+  }
+  #about p{
+    position: relative;
+    top: 10px;
+    left: 20px;
+    width:40%;
+    display: none;
+  }
