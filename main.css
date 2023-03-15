@@ -185,10 +185,10 @@ html{
     position:absolute;
   }
   #about{
-    background: url(http://www.reachrecords.com/wp-content/uploads/2020/01/Hulvey-1280x576.png), #F2CCA7;
+    background: url(Hulvey-1280x576.png), #F2CCA7;
     background-size: cover;
     background-repeat: no-repeat;
-    /*background-position: 100px;*/
+    background-position: 100%;
     height:75vh;
     width: 100%;
     background-color: #111;
@@ -205,8 +205,8 @@ html{
   }
   #about p{
     position: relative;
-    top: 10px;
+    top: 20px;
     left: 20px;
-    width:40%;
-    display: none;
+    width:50%;
+    font-family: 'Golos Text';
   }
