@@ -206,7 +206,15 @@ html{
   #about p{
     position: relative;
     top: 20px;
-    left: 20px;
+    left: 30px;
     width:50%;
     font-family: 'Golos Text';
+  }
+  #socials{
+    position: relative;
+    left: 20px;
+    top: 10px;
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
   }
