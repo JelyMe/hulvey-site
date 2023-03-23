@@ -1,5 +1,6 @@
 html{
   height:100%;
+  scroll-behavior: smooth;
 }
 body {
   min-height: 100vh;
@@ -215,7 +216,6 @@ body::-webkit-scrollbar {
   background-position: top;
   height: 500px;
   width: 100%;
-  overflow: hidden;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -297,14 +297,13 @@ body::-webkit-scrollbar {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
-  height: 1000px;
+  height: 1100px;
   width: 100%;
   overflow: hidden;
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: center;
-  gap: 50px;
+  justify-content: space-around;
   position: relative;
 }
 #music-left{
@@ -322,4 +321,18 @@ body::-webkit-scrollbar {
   100%{
     transform: translate(-0.82822em,1.54581em) rotate(-75deg);
   }
+}
+#play{
+  background: linear-gradient(180deg, #188FA7 0%, #0c5867 75%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 1000px;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  position: relative;
 }
