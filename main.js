@@ -41,4 +41,3 @@ async function task(i) {
   var text = document.getElementById("main-text");
   
   main();
-  
