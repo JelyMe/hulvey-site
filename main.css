@@ -1,3 +1,8 @@
+@font-face {
+  font-family: Canela;
+  src: url("Canela-Light.otf") format("opentype");
+}
+
 html{
   height:100%;
   scroll-behavior: smooth;
@@ -68,6 +73,9 @@ body::-webkit-scrollbar {
   color: #cfbd3c;
   font-family: "Poppins";
   font-style: italic;
+}
+#main-img{
+  display: none;
 }
 @keyframes grow {
   0% {
@@ -225,7 +233,7 @@ body::-webkit-scrollbar {
 #about h1:not(.scroller h1){
   position:relative;
   color: #111;
-  font-family: Prata;
+  font-family: Canela;
   font-style: italic;
   left: 1vw;
   top: 5vh;
@@ -420,7 +428,7 @@ body::-webkit-scrollbar {
 }
 
 #footer{
-  height: 100px;
+  height: 10px;
   background-color: #111;
   position: relative;
   justify-content: center;
