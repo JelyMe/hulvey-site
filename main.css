@@ -52,8 +52,10 @@ body::-webkit-scrollbar {
   align-items: center;
   text-align: center;
   font-size:x-small;
+  transition: all 0.2s;
 }
 .button:hover{
   color: rgb(49, 164, 58);
   border: 3px dotted rgb(49, 164, 58);
+  transition: all 0.2s;
 }
