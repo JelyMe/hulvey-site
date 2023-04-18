@@ -33,6 +33,7 @@ body::-webkit-scrollbar {
   background-size: cover;
   background-position: center;
   z-index: 2;
+  pointer-events: none;
 }
 #birds{
   position: absolute;
