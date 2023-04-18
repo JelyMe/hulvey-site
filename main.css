@@ -33,7 +33,14 @@ body::-webkit-scrollbar {
   background-size: cover;
   background-position: center;
 }
+#birds{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+}
 .button{
+  z-index: 1;
   display: flex;
   font-family: Sequel;
   border: 3px solid white;
@@ -45,4 +52,8 @@ body::-webkit-scrollbar {
   align-items: center;
   text-align: center;
   font-size:x-small;
+}
+.button:hover{
+  color: rgb(49, 164, 58);
+  border: 3px dotted rgb(49, 164, 58);
 }
