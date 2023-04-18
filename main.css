@@ -32,6 +32,7 @@ body::-webkit-scrollbar {
   background-image: url("HulveySite-Wide-Front.png");
   background-size: cover;
   background-position: center;
+  z-index: 2;
 }
 #birds{
   position: absolute;
