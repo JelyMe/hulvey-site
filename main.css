@@ -35,11 +35,11 @@ body::-webkit-scrollbar {
   z-index: 2;
   pointer-events: none;
 }
-#birds{
+#gradient{
+  background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.1) 50%, rgba(0,0,0,0) 100%);
+  width: 100%;
+  height: 100%;
   position: absolute;
-  width: 100vw;
-  height: 100vh;
-  z-index: 0;
 }
 .button{
   z-index: 1;
@@ -47,7 +47,7 @@ body::-webkit-scrollbar {
   font-family: Sequel;
   border: 3px solid white;
   color: white;
-  padding: 10px 10px 14px;
+  padding: 0.5em 0.5em 0.9em;
   cursor: pointer;
   border-radius: 7vh;
   height: 1vh;
