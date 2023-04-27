@@ -11,6 +11,7 @@ html{
 body {
   padding: 0;
   margin: 0;
+  transition: all 0.2s;
 }
 body::-webkit-scrollbar {
   display: none;
@@ -42,6 +43,11 @@ body::-webkit-scrollbar {
   height: 100%;
   position: absolute;
 }
+#logo{
+  width: 150px;
+  z-index: 1;
+  transition: all 0.2s;
+}
 .button{
   z-index: 1;
   display: flex;
@@ -65,4 +71,18 @@ a{
   color: rgb(49, 164, 58);
   border: 3px dotted rgb(49, 164, 58);
   transition: all 0.2s;
+}
+@media only screen and not (orientation: landscape) {
+  #main-wrapper{
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+  }
+  #logo{
+    width: 400px;
+  }
+  .button{
+    z-index: 5;
+    font-size: large;
+  }
 }
