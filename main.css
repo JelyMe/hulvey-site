@@ -54,13 +54,13 @@ body::-webkit-scrollbar {
   font-family: Sequel;
   border: 3px solid white;
   color: white;
-  padding: 0.5em 0.5em 0.9em;
+  padding: 5px 5px 9px 5px;
   cursor: pointer;
   border-radius: 7vh;
-  height: 1vh;
+  max-height: 1vh;
   align-items: center;
   text-align: center;
-  font-size:x-small;
+  font-size: min(4.5vw,10px);
   transition: all 0.2s;
 }
 a{
@@ -79,10 +79,11 @@ a{
     gap: 1em;
   }
   #logo{
-    width: 400px;
+    max-width: 400px;
   }
   .button{
     z-index: 5;
-    font-size: large;
+    font-size: min(4.5vw,18px);
+    padding: 9px 9px 16.2px 9px;
   }
 }
