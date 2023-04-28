@@ -50,7 +50,7 @@ body::-webkit-scrollbar {
 }
 .button{
   z-index: 1;
-  display: flex;
+  /*display: flex;*/
   font-family: Sequel;
   border: 3px solid white;
   color: white;
@@ -58,10 +58,14 @@ body::-webkit-scrollbar {
   cursor: pointer;
   border-radius: 7vh;
   max-height: 1vh;
-  align-items: center;
+  /*align-items: center;*/
   text-align: center;
   font-size: min(4.5vw,10px);
   transition: all 0.2s;
+}
+.button h1{
+  position: relative;
+  top: -1.3em;
 }
 a{
   text-decoration: none!important;
