@@ -91,6 +91,82 @@ a{
   border: 3px dotted rgb(49, 164, 58);
   transition: all 0.2s;
 }
+
+#socials{
+  z-index: 5;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  gap: 30px;
+  padding: 10px;
+  background: radial-gradient(circle, rgba(0,0,0,.5) 0%, rgba(0,0,0,0) 100%);
+}
+#insta{
+  background: linear-gradient(48deg, rgba(64,93,230,1) 0%, rgba(193,53,132,1) 36%, rgba(247,119,55,1) 75%, rgba(255,220,128,1) 100%);
+  padding: 5px 6.5px 7px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  transition: 1s;
+}
+#insta:hover{
+  background: linear-gradient(48deg, rgb(40, 56, 137) 0%, rgb(122, 36, 85) 36%, rgb(132, 69, 37) 75%, rgb(145, 125, 73) 100%);
+  padding: 5px 6.5px 7px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+#tiktok{
+  background-color: #000;
+  padding: 5px;
+  width: 35px;
+  height: 35px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#tiktok:hover{
+  background-color: #111;
+  padding: 5px;
+  width: 35px;
+  height: 35px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#buttons{
+  display: flex;
+  gap: 10px;
+}
+#twitter{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+#reach{
+  width: 40px;
+  height: 40px;
+  padding: 2.5px;
+  background-color: #111;
+  border-radius: 10px;
+}
+#reach svg:hover{
+  animation: rotate360 1.2s ease-in-out infinite;
+}
+#reach svg:not(:hover){
+  animation: rotate360 1.2s ease-in-out 6000s infinite; 
+}
+@keyframes rotate360 {
+  to { transform: rotate(360deg); }           
+}
 @media only screen and not (orientation: landscape) {
   #main-wrapper{
     flex-direction: column;
@@ -104,5 +180,11 @@ a{
     z-index: 5;
     font-size: min(4.5vw,18px);
     padding: 15px 10px;
+  }
+  #socials{
+    width:100%;
+    right: 0px;
+    gap: 10px;
+    scale: 0.9;
   }
 }
