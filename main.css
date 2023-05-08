@@ -79,7 +79,7 @@ video {
 }
 @media (pointer:none), (pointer:coarse) {
   .button a{
-    top: -2.5em;
+    /*top: -2.5em;*/
   }
 }
 a{
