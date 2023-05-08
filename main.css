@@ -60,26 +60,26 @@ video {
 }
 .button{
   z-index: 1;
-  /*display: flex;*/
+  display: flex;
   font-family: Sequel;
   border: 3px solid white;
   color: white;
-  padding: 5px 5px 9px 5px;
+  padding: 7.5px 5px;
   cursor: pointer;
   border-radius: 7vh;
   max-height: 1vh;
-  /*align-items: center;*/
+  align-items: center;
   text-align: center;
   font-size: min(4.5vw,10px);
   transition: all 0.2s;
 }
 .button h1{
   position: relative;
-  top: -1.3em;
+  top: -.13em;
 }
 @media (pointer:none), (pointer:coarse) {
   .button h1{
-    top: -1.1em;
+    top: -.11em;
   }
 }
 a{
@@ -103,6 +103,6 @@ a{
   .button{
     z-index: 5;
     font-size: min(4.5vw,18px);
-    padding: 9px 9px 16.2px 9px;
+    padding: 15px 10px;
   }
 }
