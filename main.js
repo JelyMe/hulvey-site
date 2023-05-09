@@ -11,3 +11,20 @@ $.get('config.txt',{},function(content){
     if ((links[2] != null && links[2] != "") && !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) game.href = links[2]; else {game.parentElement.style.opacity = 0.4; game.parentElement.style.pointerEvents = "none"; if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) game.parentElement.style.display = "none";}
     if (links[3] != null && links[3] != "") tour.href = links[3]; else {tour.parentElement.style.opacity = 0.4; tour.parentElement.style.pointerEvents = "none";}
 });
+
+if(isSafari()){
+    music.parentElement.style.display = "flex";
+    music.style.top = "0.45em";
+    store.parentElement.style.display = "flex";
+    store.style.top = "0.45em";
+    game.parentElement.style.display = "flex";
+    game.style.top = "0.45em";
+    tour.parentElement.style.display = "flex";
+    tour.style.top = "0.45em";
+}
+function agentHas(keyword) {
+    return navigator.userAgent.toLowerCase().search(keyword.toLowerCase()) > -1;
+    }
+function isSafari() {
+    return agentHas("Safari") && !agentHas("Chrome") && !agentHas("CriOS");
+    }

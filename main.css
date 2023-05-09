@@ -60,7 +60,7 @@ video {
 }
 .button{
   z-index: 1;
-  /*display: flex;*/
+  display: flex;
   font-family: Sequel;
   border: 3px solid white;
   color: white;
@@ -68,18 +68,20 @@ video {
   cursor: pointer;
   border-radius: 7vh;
   max-height: 1vh;
-  /*align-items: center;*/
+  align-items: center;
   text-align: center;
   font-size: min(4.5vw,10px);
   transition: all 0.2s;
 }
 .button a{
   position: relative;
-  top: -2.5em;
 }
 @media (pointer:none), (pointer:coarse) {
+  .button{
+    display: block;
+  }
   .button a{
-    /*top: -2.5em;*/
+    top: -2.25em;
   }
 }
 a{
